@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>login</title>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <% if (messages.error){ %> <%= messages.error %> <% } %>
+
+    <form action="/login" method="POST">
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required />
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <a href="/register">Register</a>
+    <div id="user"></div>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> --> 
+  
+    <!-- <script src="/script.js"></script> -->
+
+    <!-- <div>
+  <ol>
+    <li><%= result[1].id %></li>
+        <li><%= result[1].name %></li>
+    <li><%= result[1].email %></li>
+        <li><%= result[1].password %></li>
+  </ol>
+</div> -->
+  </body>
+</html>
